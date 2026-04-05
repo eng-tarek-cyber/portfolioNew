@@ -1,0 +1,5 @@
+# غيّر عنوان الـ Sitemap إذا كان نطاق النشر مختلفًا عن GitHub Pages أدناه.
+User-agent: *
+Allow: /
+
+Sitemap: https://eng-tarek-cyber.github.io/portfolioNew/sitemap.xml
