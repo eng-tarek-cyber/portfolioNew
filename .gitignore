@@ -1,0 +1,12 @@
+# نسخة مكررة من المشروع داخل المجلد (لا ترفعها كـ submodule)
+portfolioNew/
+
+# نظام التشغيل
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# محررات
+*.swp
+*.swo
+*~
