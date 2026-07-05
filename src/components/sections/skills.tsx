@@ -1,20 +1,16 @@
 "use client";
 
-import {
-  skills,
-  skillCategories,
-  type SkillCategory,
-} from "@/data/skills";
+import { skills, skillCategories, type SkillCategory } from "@/data/skills";
 import { GlassCard } from "@/components/ui/glass-card";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { StaggerWrapper, fadeInUp } from "@/components/ui/motion";
 import { motion } from "framer-motion";
 import {
   Code2,
-  Database,
   Cloud,
   Wrench,
-  Server,
+  BriefcaseBusiness,
+  Workflow,
   Users,
   Shield,
   GitBranch,
@@ -33,27 +29,30 @@ const iconMap: Record<string, React.ReactNode> = {
   nextjs: <Globe size={22} />,
   tailwind: <Palette size={22} />,
   bootstrap: <Palette size={22} />,
-  nodejs: <Server size={22} />,
-  express: <Server size={22} />,
+
   api: <Globe size={22} />,
-  mongodb: <Database size={22} />,
-  mysql: <Database size={22} />,
+
   git: <GitBranch size={22} />,
   github: <GitBranch size={22} />,
   vscode: <Wrench size={22} />,
   figma: <Palette size={22} />,
   vercel: <Cloud size={22} />,
   githubpages: <Cloud size={22} />,
+
   security: <Shield size={22} />,
   problem: <Brain size={22} />,
   communication: <MessageCircle size={22} />,
   team: <Users size={22} />,
+
+  // Experience
+  users: <Users size={22} />,
+  workflow: <Workflow size={22} />,
+  review: <BriefcaseBusiness size={22} />,
 };
 
 const categoryIcons: Record<SkillCategory, React.ReactNode> = {
   Frontend: <Code2 size={18} />,
-  Backend: <Server size={18} />,
-  Database: <Database size={18} />,
+  Experience: <BriefcaseBusiness size={18} />,
   Tools: <Wrench size={18} />,
   Cloud: <Cloud size={18} />,
   "Soft Skills": <Users size={18} />,
@@ -61,7 +60,10 @@ const categoryIcons: Record<SkillCategory, React.ReactNode> = {
 
 export function Skills() {
   return (
-    <section id="skills" className="section-padding bg-[var(--color-bg-mid)]/50">
+    <section
+      id="skills"
+      className="section-padding bg-[var(--color-bg-mid)]/50"
+    >
       <div className="container mx-auto px-4 md:px-6">
         <SectionHeading
           title="Skills & Technologies"
@@ -71,7 +73,7 @@ export function Skills() {
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
           {skillCategories.map((category) => {
             const categorySkills = skills.filter(
-              (s) => s.category === category
+              (s) => s.category === category,
             );
             return (
               <StaggerWrapper key={category}>
