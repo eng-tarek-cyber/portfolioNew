@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", "Cairo", system-ui, sans-serif;
+  --color-bg-deep: #020617;
+  --color-bg-mid: #0f172a;
+  --color-bg-card: #111827;
+  --color-primary: #5d1bf3;
+  --color-primary-soft: #8c52ff;
+  --color-accent: #3b82f6;
+  --color-text: #cbd5e1;
+  --color-muted: #94a3b8;
+  --color-white: #f8fafc;
+}
+
+:root {
+  color-scheme: dark;
+  --nav-bg: rgba(2, 6, 23, 0.88);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --color-bg-deep: #f8fafc;
+  --color-bg-mid: #e2e8f0;
+  --color-bg-card: #ffffff;
+  --color-text: #334155;
+  --color-muted: #64748b;
+  --color-white: #0f172a;
+  --nav-bg: rgba(255, 255, 255, 0.94);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-bg-deep);
+  color: var(--color-text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(93, 27, 243, 0.35);
+  color: #fff;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.container {
+  width: min(92%, 1200px);
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: clamp(3.5rem, 8vw, 6.25rem);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #8c52ff 0%, #3b82f6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(93, 27, 243, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(93, 27, 243, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
