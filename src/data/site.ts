@@ -3,7 +3,8 @@ export const siteConfig = {
   title: "Tarek Ahmed | Front-End Developer Portfolio",
   description:
     "Tarek Ahmed — Front-End Developer & Information Systems student in Kafr El Sheikh, Egypt. Portfolio: React, JavaScript, responsive websites, dashboards, and UI projects.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://eng-tarek-cyber.github.io/portfolioNew",
+  url:
+    process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-new-i8l7.vercel.app",
   ogImage: "/img/tarek1.jpeg",
   email: "snamr015@gmail.com",
   phone: "+201006494164",
@@ -41,7 +42,14 @@ export const siteConfig = {
       "I craft premium, responsive digital experiences that blend analytical thinking with pixel-perfect design — turning ideas into high-performance web products.",
     descriptionAr:
       "متخصص في بناء واجهات مستخدم احترافية تجمع بين دقة الأداء وجمال التصميم، مع رؤية تحليلية نابعة من دراستي لنظم المعلومات.",
-    techStack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "JavaScript", "Node.js"],
+    techStack: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "JavaScript",
+      "Node.js",
+    ],
   },
   about: {
     story:

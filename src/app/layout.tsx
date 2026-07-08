@@ -153,6 +153,10 @@ export default function RootLayout({
             __html: JSON.stringify(jsonLd),
           }}
         />
+        <meta
+          name="google-site-verification"
+          content="wlef69ha1Fk-SrS1Eiubff26Bt8mVHkHszCRYCpU5ZI"
+        />
       </head>
 
       <body className="antialiased">
