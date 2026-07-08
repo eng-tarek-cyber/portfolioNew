@@ -25,14 +25,27 @@ const cairo = Cairo({
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.name}`,
   },
+
   description: siteConfig.description,
+
   authors: [{ name: siteConfig.author.name }],
+
   creator: siteConfig.author.name,
-  robots: { index: true, follow: true },
+
+  verification: {
+    google: "wlef69ha1Fk-SrS1Eiubff26Bt8mVHkHszCRYCpU5ZI",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
   alternates: {
     canonical: absoluteUrl("/"),
     languages: {
@@ -40,6 +53,7 @@ export const metadata: Metadata = {
       ar: absoluteUrl("/"),
     },
   },
+
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -57,12 +71,14 @@ export const metadata: Metadata = {
       },
     ],
   },
+
   twitter: {
     card: "summary_large_image",
     title: siteConfig.title,
     description: siteConfig.description,
     images: [absoluteUrl(siteConfig.ogImage)],
   },
+
   icons: {
     icon: siteConfig.ogImage,
     apple: siteConfig.ogImage,
@@ -79,7 +95,9 @@ const jsonLd = {
       name: `${siteConfig.name} — Portfolio`,
       description: siteConfig.description,
       inLanguage: ["en", "ar"],
-      publisher: { "@id": `${siteConfig.url}/#person` },
+      publisher: {
+        "@id": `${siteConfig.url}/#person`,
+      },
     },
     {
       "@type": "Person",
@@ -128,11 +146,15 @@ export default function RootLayout({
             __html: `(function(){try{if(localStorage.getItem("portfolio-theme")==="light"){document.documentElement.setAttribute("data-theme","light");}}catch(e){}})();`,
           }}
         />
+
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd),
+          }}
         />
       </head>
+
       <body className="antialiased">
         <ThemeProvider>
           <Preloader />
