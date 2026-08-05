@@ -45,7 +45,7 @@ export function Hero() {
             <div className="flex items-center gap-2 mb-6">
               <Sparkles size={16} className="text-violet-400" />
               <span className="text-sm text-violet-300 font-medium">
-                Available for freelance work
+                Available for work
               </span>
             </div>
 

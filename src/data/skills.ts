@@ -28,6 +28,7 @@ export const skills: Skill[] = [
   { name: "Next.js", icon: "nextjs", category: "Frontend" },
   { name: "Tailwind CSS", icon: "tailwind", category: "Frontend" },
   { name: "Bootstrap", icon: "bootstrap", category: "Frontend" },
+  { name: "Redux Toolkit", icon: "redux", category: "Frontend" },
 
   { name: "Git", icon: "git", category: "Tools" },
   { name: "GitHub", icon: "github", category: "Tools" },

@@ -18,18 +18,22 @@ import {
   Palette,
   Brain,
   MessageCircle,
+  FileCode2,
+  Braces,
+  Binary,
+  Boxes,
 } from "lucide-react";
 
 const iconMap: Record<string, React.ReactNode> = {
-  html5: <Code2 size={22} />,
+  html5: <Braces size={22} />,
   css3: <Palette size={22} />,
-  javascript: <Code2 size={22} />,
-  typescript: <Code2 size={22} />,
+  javascript: <Binary size={22} />,
+  typescript: <FileCode2 size={22} />,
   react: <Globe size={22} />,
   nextjs: <Globe size={22} />,
   tailwind: <Palette size={22} />,
   bootstrap: <Palette size={22} />,
-
+  redux: <Boxes size={22} />,
   api: <Globe size={22} />,
 
   git: <GitBranch size={22} />,
@@ -90,12 +94,12 @@ export function Skills() {
                         key={skill.name}
                         variants={fadeInUp}
                         whileHover={{ scale: 1.05, y: -2 }}
-                        className="flex items-center gap-2.5 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-violet-500/30 hover:bg-violet-500/5 transition-all cursor-default"
+                        className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.03] border border-white/5 hover:border-violet-500/30 hover:bg-violet-500/5 transition-all cursor-default min-h-[64px]"
                       >
-                        <span className="text-violet-400">
+                        <span className="text-violet-400 shrink-0">
                           {iconMap[skill.icon] || <Code2 size={22} />}
                         </span>
-                        <span className="text-sm text-white/80 font-medium">
+                        <span className="min-w-0 flex-1 break-words text-sm text-white/80 font-medium leading-tight">
                           {skill.name}
                         </span>
                       </motion.div>

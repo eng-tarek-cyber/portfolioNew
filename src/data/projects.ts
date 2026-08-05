@@ -714,123 +714,171 @@ export const projects: Project[] = [
     relatedSlugs: ["dashboard", "aqar-vision"],
   },
   {
-    slug: "aqar-vision",
-    title: "Aqār Vision",
+    slug: "abyssal-elegance",
+    title: "Abyssal Elegance",
+
     shortDescription:
-      "A modern real estate platform showcasing premium residential units and luxury villas.",
+      "An AI-powered luxury restaurant platform featuring a modern responsive website, intelligent recommendations, and a production-ready backend built with React and Node.js.",
+
     description:
-      "Aqār Vision is a modern real estate platform showcasing premium residential units and luxury villas. It combines sleek design with a user-friendly interface to help users find their dream home with ease and style — characterized by responsiveness, ease of use, and attention to detail.",
-    category: "Real Estate",
+      "Abyssal Elegance is a full-stack luxury restaurant platform designed to provide a premium digital dining experience. The application combines a modern responsive frontend with an Express.js backend and Google Gemini AI integration to deliver intelligent restaurant recommendations. As a Frontend Developer, I contributed to building reusable UI components, creating responsive layouts, integrating AI-powered features, and preparing the application for production deployment using Docker and Railway.",
+
+    category: "Restaurant / AI Platform",
     status: "Live",
-    image: "/img/gallery.png",
-    gallery: ["/img/gallery.png", "/img/bach.jpg"],
-    techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Bootstrap",
-      "Responsive Design",
-      "CSS Grid",
+
+    image: "/img/abyssal-elegance.png",
+
+    gallery: [
+      "/img/abyssal-home.png",
+      "/img/abyssal-menu.png",
+      "/img/abyssal-ai.png",
     ],
-    liveUrl: "https://eng-tarek-cyber.github.io/boo5tstrapproject/",
-    githubUrl: "https://github.com/eng-tarek-cyber/boo5tstrapproject",
+
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Node.js",
+      "Express.js",
+      "Google Gemini AI",
+      "REST API",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Docker",
+      "Railway",
+      "Git",
+      "GitHub",
+    ],
+
+    liveUrl: "https://ingenious-exploration-production-8628.up.railway.app/",
+    githubUrl: "https://github.com/eng-tarek-cyber/abyssa-l-elegance",
+
     overview: {
       problem:
-        "Real estate buyers struggle with cluttered listing sites that prioritize quantity over quality presentation and user experience.",
+        "Luxury restaurants need a modern digital platform that represents their brand, improves customer experience, and provides intelligent assistance for choosing dishes and services.",
+
       solution:
-        "Created a visually stunning property showcase platform with high-quality imagery, intuitive filtering, and a premium browsing experience.",
+        "Built a full-stack restaurant platform with a premium user interface, AI-powered recommendations using Google Gemini, and a scalable backend architecture using Node.js and Express.",
+
       goals: [
-        "Present properties with magazine-quality visual layout",
-        "Simplify property discovery with clear categorization",
-        "Build trust through professional design and detailed listings",
-        "Ensure flawless mobile experience for on-the-go browsing",
+        "Create a premium restaurant digital experience",
+        "Build a responsive and modern user interface",
+        "Integrate AI-powered restaurant assistance",
+        "Develop a scalable backend API",
+        "Deploy the application using modern cloud technologies",
       ],
+
       targetUsers: [
-        "Home buyers searching for residential properties",
-        "Real estate investors evaluating opportunities",
-        "Property agents showcasing listings",
-        "Luxury home seekers expecting premium UX",
+        "Restaurant customers",
+        "Food businesses",
+        "Luxury dining brands",
+        "Restaurant owners",
       ],
     },
+
     features: [
       {
-        title: "Property Gallery",
+        title: "Luxury Restaurant Website",
         description:
-          "High-resolution property images with zoom and carousel navigation.",
-        icon: "image",
+          "Modern and elegant website showcasing restaurant atmosphere, menu, services, and brand identity.",
+        icon: "layout",
       },
+
       {
-        title: "Smart Filtering",
+        title: "AI Restaurant Assistant",
         description:
-          "Filter properties by type, price range, and location categories.",
-        icon: "filter",
+          "Integrated Google Gemini AI to provide intelligent recommendations and interactive customer experiences.",
+        icon: "sparkles",
       },
-      {
-        title: "Detailed Listings",
-        description:
-          "Rich property cards with specs, amenities, and contact options.",
-        icon: "home",
-      },
+
       {
         title: "Responsive Design",
         description:
-          "Pixel-perfect layouts from mobile phones to ultra-wide monitors.",
+          "Fully responsive layouts optimized for desktop, tablet, and mobile devices.",
         icon: "smartphone",
       },
+
       {
-        title: "Contact Integration",
+        title: "Backend API",
         description:
-          "Direct inquiry buttons connecting buyers with agents instantly.",
-        icon: "phone",
+          "Express.js backend providing secure API endpoints and application services.",
+        icon: "server",
       },
+
       {
-        title: "Premium Aesthetics",
+        title: "Production Deployment",
         description:
-          "Luxury-focused color palette and typography elevating brand perception.",
-        icon: "gem",
+          "Configured Docker deployment with Railway cloud hosting and production environment setup.",
+        icon: "cloud",
+      },
+
+      {
+        title: "Performance Optimization",
+        description:
+          "Optimized build process using Vite, TypeScript, and modern frontend practices.",
+        icon: "zap",
       },
     ],
+
     architecture: {
       frontend:
-        "HTML5, CSS3, and JavaScript with Bootstrap grid and custom property card components.",
+        "React, TypeScript, Vite, reusable components, responsive UI architecture, and modern frontend practices.",
+
       backend:
-        "Static front-end with structured JSON-ready data models for future API integration.",
+        "Node.js and Express.js backend handling APIs and server-side functionality.",
+
       database:
-        "Property data structured for MongoDB integration with geospatial indexing support.",
-      authentication:
-        "Agent login portal planned for property management dashboard.",
-      api: "REST API design for property CRUD, search, and favorites functionality.",
-      deployment: "GitHub Pages with image optimization and lazy loading.",
+        "API-based architecture prepared for future database integration.",
+
+      authentication: "Environment-based configuration for secure API access.",
+
+      api: "REST API endpoints supporting backend communication and AI features.",
+
+      deployment:
+        "Dockerized production deployment hosted on Railway with optimized server configuration.",
     },
+
     challenges: [
-      "Showcasing large property images without sacrificing page load speed.",
-      "Creating intuitive property comparison on small mobile screens.",
-      "Designing a luxury aesthetic that works across diverse property types.",
+      "Integrating Google Gemini AI into a real-world application.",
+      "Building a premium responsive design from scratch.",
+      "Configuring production deployment with Docker and Railway.",
+      "Managing frontend and backend communication efficiently.",
     ],
+
     lessonsLearned: [
-      "Real estate UX demands high-quality imagery as the primary conversion driver.",
-      "Progressive image loading is essential for image-heavy property sites.",
-      "Clear CTAs on every listing page increase inquiry rates significantly.",
+      "AI integration can significantly improve modern user experiences.",
+      "Production deployment requires proper environment and server configuration.",
+      "Reusable components improve scalability and maintainability.",
+      "Cloud deployment workflows are essential for modern applications.",
     ],
+
     performance: {
-      seo: "Property-specific meta tags, structured data for listings, and descriptive alt text.",
+      seo: "Optimized metadata, semantic HTML structure, and search-engine-friendly architecture.",
+
       accessibility:
-        "Screen reader friendly property descriptions and keyboard-navigable galleries.",
+        "Responsive layouts, semantic elements, and accessible user interactions.",
+
       performance:
-        "Lazy-loaded images, compressed assets, and minimal render-blocking resources.",
+        "Optimized Vite builds, efficient asset handling, and production-ready server configuration.",
+
       responsive:
-        "Fluid typography and adaptive image containers across all breakpoints.",
+        "Mobile-first responsive design adapting across all screen sizes.",
+
       bestPractices:
-        "Semantic HTML5 sections, organized asset folders, and maintainable CSS architecture.",
+        "TypeScript usage, component-based architecture, clean code structure, Git workflow, Docker deployment, and scalable development practices.",
     },
+
     futureImprovements: [
-      "Interactive map integration with property pins",
-      "Virtual tour and 360° photo support",
-      "Mortgage calculator widget",
-      "User favorites and saved searches",
-      "Agent dashboard for listing management",
+      "Online table reservation system",
+      "Customer authentication",
+      "Restaurant dashboard",
+      "Online ordering system",
+      "Payment integration",
+      "Multi-language support",
+      "Advanced AI food recommendations",
     ],
-    relatedSlugs: ["dashboard", "studio-hub"],
+
+    relatedSlugs: ["devsync-agency", "bright-smile", "shop-co", "dashboard"],
   },
 ];
 

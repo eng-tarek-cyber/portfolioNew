@@ -11,11 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
 
-function ProjectCard({
-  project,
-}: {
-  project: (typeof projects)[0];
-}) {
+function ProjectCard({ project }: { project: (typeof projects)[0] }) {
   const ref = useRef<HTMLDivElement>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
