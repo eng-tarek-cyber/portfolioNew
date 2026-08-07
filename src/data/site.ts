@@ -10,7 +10,7 @@ export const siteConfig = {
   phone: "+201006494164",
   phoneDisplay: "+20 100 649 4164",
   location: "Kafr El Sheikh, Egypt",
-  cvPath: "/img/tarek-ahmed-eid.pdf",
+  cvPath: "/img/Tarek-Ahmed-CV (1).pdf",
   author: {
     name: "Tarek Ahmed",
     alternateName: ["Tarek Eid", "طارق عيد"],

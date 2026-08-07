@@ -79,7 +79,7 @@ export const projects: Project[] = [
     ],
 
     liveUrl: "https://devsync-agency.vercel.app/",
-    githubUrl: "",
+    githubUrl: "https://github.com/ahmedsh3ban/DevSync-Official-Website.git",
 
     overview: {
       problem:
