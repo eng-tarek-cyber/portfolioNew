@@ -474,125 +474,158 @@ export const projects: Project[] = [
 
     relatedSlugs: ["dashboard", "studio-hub", "aqar-vision"],
   },
+
   {
     slug: "dashboard",
-    title: "TechMart Dash",
+    title: "Enterprise Admin Dashboard",
     shortDescription:
-      "A sleek e-commerce admin dashboard with a modern dark interface for sales, users, and inventory management.",
+      "A production-ready SaaS admin dashboard with authentication, analytics, CRUD modules, interactive charts, and a reusable design system.",
+
     description:
-      "TechMart Dash is a comprehensive e-commerce dashboard featuring a modern, dark interface. It provides a clean overview of sales, users, and products, offering an efficient way to manage inventory and track business performance at a glance while ensuring a professional presence for any digital business.",
+      "Enterprise Admin Dashboard is a modern SaaS dashboard built with React 19, TypeScript, Tailwind CSS v4, and Recharts. It features secure authentication, analytics, user, product, and order management with full CRUD operations, responsive layouts, dark/light mode, and a scalable component architecture inspired by enterprise platforms like Stripe, Vercel, and Linear.",
+
     category: "Dashboard",
     status: "Live",
+
     image: "/img/dashnew.png",
     gallery: ["/img/dashnew.png", "/img/dashbord.png"],
+
     techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Chart.js",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Recharts",
+      "React Router",
+      "CSS Variables",
       "Responsive Design",
-      "Local Storage",
-      "REST API",
+      "Component Architecture",
     ],
-    liveUrl: "https://eng-tarek-cyber.github.io/-/",
-    githubUrl: "https://github.com/eng-tarek-cyber/-",
+
+    liveUrl: "https://enterprise-admin-dashboard-phi.vercel.app/",
+    githubUrl:
+      "https://github.com/eng-tarek-cyber/Enterprise-Admin-Dashboard.git",
+
     overview: {
       problem:
-        "Small e-commerce businesses need an affordable, intuitive dashboard to monitor sales, manage products, and track user activity without complex enterprise tools.",
+        "Businesses need a scalable admin dashboard to manage users, products, orders, and business analytics without relying on expensive enterprise software.",
+
       solution:
-        "Built a lightweight, visually polished admin dashboard with dark UI, real-time-style metrics cards, and organized navigation for key business KPIs.",
+        "Developed a production-ready enterprise dashboard featuring authentication, analytics, CRUD management modules, responsive layouts, reusable UI components, and modern UX patterns.",
+
       goals: [
-        "Deliver a professional dark-themed admin experience",
-        "Organize sales, users, and product data clearly",
-        "Ensure fast load times on low-end devices",
-        "Maintain responsive layout across all screen sizes",
+        "Build a scalable SaaS dashboard architecture",
+        "Create a reusable enterprise design system",
+        "Deliver an intuitive user experience",
+        "Support desktop, tablet, and mobile devices",
       ],
+
       targetUsers: [
-        "E-commerce store owners",
+        "SaaS companies",
+        "Business administrators",
         "Startup founders",
         "Product managers",
-        "Freelance developers showcasing admin UI skills",
+        "Frontend developers",
       ],
     },
+
     features: [
       {
-        title: "Sales Overview",
+        title: "Authentication",
         description:
-          "At-a-glance revenue metrics with trend indicators and period comparisons.",
+          "Complete authentication flow with login, forgot password, remember me, password visibility toggle, and OAuth-ready interface.",
+        icon: "shield",
+      },
+      {
+        title: "Analytics Dashboard",
+        description:
+          "Interactive KPI cards, revenue analytics, sales reports, and multiple business charts powered by Recharts.",
         icon: "chart",
+      },
+      {
+        title: "User Management",
+        description:
+          "Advanced CRUD operations with search, filtering, pagination, edit, delete, and role management.",
+        icon: "users",
       },
       {
         title: "Product Management",
         description:
-          "Organized product listings with status badges and inventory tracking.",
+          "Grid and table views, category filters, product details, inventory management, and CRUD functionality.",
         icon: "package",
       },
       {
-        title: "User Analytics",
+        title: "Orders Management",
         description:
-          "User activity panels highlighting engagement and growth patterns.",
-        icon: "users",
+          "Order tracking with status badges, detail drawer, order timeline, and context-aware actions.",
+        icon: "shopping-cart",
       },
       {
-        title: "Dark UI Theme",
+        title: "Responsive Design System",
         description:
-          "Premium dark interface reducing eye strain during extended use.",
-        icon: "moon",
-      },
-      {
-        title: "Responsive Layout",
-        description:
-          "Fully adaptive grid system for desktop, tablet, and mobile views.",
-        icon: "smartphone",
-      },
-      {
-        title: "Performance Optimized",
-        description:
-          "Minimal dependencies and optimized assets for fast page loads.",
-        icon: "zap",
+          "30+ reusable UI components with dark/light mode, CSS variables, and responsive layouts.",
+        icon: "layout",
       },
     ],
+
     architecture: {
       frontend:
-        "Vanilla HTML, CSS, and JavaScript with modular component-style sections and CSS Grid/Flexbox layouts.",
+        "React 19, TypeScript, Tailwind CSS v4, reusable component architecture, and responsive layouts.",
+
       backend:
-        "Static front-end with mock data structures; designed for easy integration with Node.js/Express APIs.",
+        "Frontend architecture prepared for REST API integration with authentication and CRUD operations.",
+
       database:
-        "Client-side data simulation; architecture supports MongoDB or PostgreSQL backend integration.",
+        "Uses mock data with scalable structure ready for PostgreSQL, MongoDB, or any REST backend.",
+
       authentication:
-        "UI-ready login flow designed for JWT-based authentication integration.",
-      api: "RESTful API structure planned for CRUD operations on products, users, and orders.",
+        "Complete authentication UI prepared for JWT or OAuth integration with protected routes.",
+
+      api: "REST API architecture designed for users, products, orders, analytics, and authentication.",
+
       deployment:
-        "GitHub Pages with optimized static assets and CDN-friendly structure.",
+        "Optimized for Vercel deployment with production-ready configuration.",
     },
+
     challenges: [
-      "Creating a data-dense dashboard that remains readable on mobile screens.",
-      "Balancing visual richness with performance on static hosting.",
-      "Designing intuitive navigation for multiple admin sections.",
+      "Designing an enterprise-level dashboard while maintaining scalability.",
+      "Building reusable UI components without external UI libraries.",
+      "Managing complex CRUD workflows and responsive layouts.",
+      "Creating consistent dark/light themes using CSS Variables.",
     ],
+
     lessonsLearned: [
-      "Dark UI requires careful contrast ratios for accessibility compliance.",
-      "Dashboard UX benefits from progressive disclosure — show summaries first, details on demand.",
-      "Consistent spacing systems dramatically improve perceived quality.",
+      "Component-driven architecture significantly improves maintainability.",
+      "Reusable design systems accelerate feature development.",
+      "Strong TypeScript typing reduces runtime errors.",
+      "Responsive dashboards require different UX patterns across devices.",
     ],
+
     performance: {
-      seo: "Semantic HTML structure with descriptive meta tags and alt text on all images.",
+      seo: "Semantic HTML, optimized metadata, and accessibility-focused structure.",
+
       accessibility:
-        "Keyboard-navigable elements, sufficient color contrast, and ARIA labels on interactive components.",
+        "Keyboard navigation, focus states, ARIA-friendly components, and WCAG-compliant color contrast.",
+
       performance:
-        "Optimized images, minimal JavaScript bundle, and lazy loading for below-fold content.",
+        "Optimized rendering, reusable components, lazy loading, and minimal unnecessary re-renders.",
+
       responsive:
-        "Mobile-first CSS with breakpoints at 640px, 768px, 1024px, and 1280px.",
+        "Fully responsive across desktop, tablet, and mobile with adaptive layouts.",
+
       bestPractices:
-        "Clean folder structure, reusable CSS variables, and commented code sections.",
+        "Modern React architecture, TypeScript, reusable components, clean folder structure, and scalable codebase.",
     },
+
     futureImprovements: [
-      "Real-time data sync with WebSocket connections",
-      "User role management (admin, editor, viewer)",
-      "Export reports to PDF and CSV",
-      "Multi-language support (Arabic/English)",
-      "Integration with payment gateways",
+      "Real backend integration",
+      "JWT authentication",
+      "Role-based access control (RBAC)",
+      "Real-time analytics with WebSockets",
+      "Export reports to PDF & CSV",
+      "Internationalization (i18n)",
+      "Multi-tenant support",
     ],
+
     relatedSlugs: ["studio-hub", "aqar-vision"],
   },
   {
