@@ -629,123 +629,149 @@ export const projects: Project[] = [
     relatedSlugs: ["studio-hub", "aqar-vision"],
   },
   {
-    slug: "studio-hub",
-    title: "Studio Hub",
+    slug: "te-digital",
+    title: "T.E Digital",
     shortDescription:
-      "A comprehensive creative agency platform showcasing professional services and diverse portfolios.",
+      "A modern digital agency platform providing marketing, web development, and digital solutions for businesses across Egypt and the Arab world.",
     description:
-      "Studio Hub is a comprehensive creative agency platform designed to showcase professional services and diverse portfolios. From web development to digital security, the studio provides high-quality solutions with a sleek, modern interface, ensuring a professional presence for any business or creative project.",
+      "T.E Digital is a modern digital agency platform built to showcase professional digital marketing, web development, and business solutions. The platform presents the agency's services, portfolio, and contact channels through a modern responsive interface designed to build trust, generate leads, and help businesses establish a strong digital presence.",
     category: "Agency",
     status: "Live",
-    image: "/img/StudioHub.png",
-    gallery: ["/img/StudioHub.png"],
+    image: "/img/TEDigital.png",
+    gallery: ["/img/TEDigital1.png"],
     techStack: [
-      "HTML5",
-      "Bootstrap 5",
-      "CSS3",
-      "JavaScript",
-      "Font Awesome",
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
       "Responsive Design",
+      "Web3Forms",
+      "WhatsApp Integration",
+      "SEO",
+      "Analytics",
     ],
-    liveUrl: "https://eng-tarek-cyber.github.io/agency-new/",
-    githubUrl: "https://github.com/eng-tarek-cyber/agency-new",
+    liveUrl: "https://te-digital-lilac.vercel.app/",
+    githubUrl: "https://github.com/eng-tarek-cyber/te-digital-website.git",
     overview: {
       problem:
-        "Creative agencies need a compelling online presence that communicates expertise, builds trust, and converts visitors into clients.",
+        "Many small businesses and local brands need professional digital marketing and web solutions but struggle to present their services online and convert visitors into potential clients.",
       solution:
-        "Designed and developed a premium agency website with service showcases, portfolio sections, team highlights, and strong call-to-action flows.",
+        "Designed and developed a modern digital agency website that clearly presents T.E Digital services, showcases real projects, and provides direct lead-generation channels through contact forms, WhatsApp, email, and social media.",
       goals: [
-        "Create a premium agency brand identity online",
-        "Showcase diverse service offerings clearly",
-        "Build trust through professional design and social proof",
-        "Optimize for lead generation and contact conversions",
+        "Build a professional digital presence for T.E Digital",
+        "Clearly showcase marketing, development, and web services",
+        "Present real client and portfolio projects professionally",
+        "Generate qualified leads through multiple contact channels",
+        "Create a responsive and trustworthy experience for Egyptian and Arab businesses",
       ],
       targetUsers: [
-        "Small business owners seeking digital services",
-        "Startups needing web development partners",
-        "Creative professionals evaluating agencies",
-        "International clients on freelance platforms",
+        "Small and medium-sized business owners",
+        "E-commerce businesses",
+        "Restaurants and local businesses",
+        "Companies looking for website development",
+        "Businesses interested in digital marketing and paid advertising",
+        "Entrepreneurs and startups across Egypt and the Arab world",
       ],
     },
     features: [
       {
-        title: "Service Showcase",
+        title: "Services Showcase",
         description:
-          "Beautifully designed service cards with icons and detailed descriptions.",
+          "Clear presentation of digital marketing, web development, website design, and business solutions.",
         icon: "briefcase",
       },
       {
-        title: "Portfolio Gallery",
+        title: "Real Projects Portfolio",
         description:
-          "Curated project showcase with hover effects and category filtering.",
+          "Professional portfolio section showcasing real websites, dashboards, e-commerce platforms, and business projects.",
         icon: "image",
       },
       {
-        title: "Team Section",
+        title: "Lead Generation",
         description:
-          "Professional team member profiles building credibility and trust.",
+          "Integrated contact form designed to collect potential client information and project requirements.",
         icon: "users",
       },
       {
-        title: "Contact Integration",
+        title: "WhatsApp Integration",
         description:
-          "Multiple contact channels including form, email, and social links.",
+          "Direct WhatsApp communication allowing potential clients to quickly start a business conversation.",
+        icon: "message-circle",
+      },
+      {
+        title: "Contact & Social Channels",
+        description:
+          "Multiple communication options including email, WhatsApp, and social media links.",
         icon: "mail",
       },
       {
-        title: "Bootstrap Grid",
+        title: "Responsive Design",
         description:
-          "Responsive 12-column grid ensuring perfect layout on all devices.",
-        icon: "layout",
+          "Fully responsive interface optimized for mobile, tablet, and desktop devices.",
+        icon: "smartphone",
       },
       {
-        title: "Smooth Animations",
-        description: "Scroll-triggered animations enhancing the premium feel.",
-        icon: "sparkles",
+        title: "Arabic RTL Experience",
+        description:
+          "Arabic-first interface with RTL support designed for businesses and customers in Egypt and the Arab world.",
+        icon: "languages",
+      },
+      {
+        title: "Analytics Tracking",
+        description:
+          "User interaction tracking for important actions such as lead submissions and WhatsApp clicks.",
+        icon: "chart-no-axes-combined",
       },
     ],
     architecture: {
       frontend:
-        "Bootstrap 5 framework with custom CSS overrides and JavaScript interactions.",
+        "Modern React-based frontend with reusable sections, responsive layouts, and utility-first styling.",
       backend:
-        "Static site architecture; contact form ready for FormSubmit or custom API integration.",
+        "Frontend-focused architecture with third-party form handling for lead submissions; custom backend integration can be added in the future.",
       database:
-        "No database required for static deployment; CMS-ready structure for future expansion.",
-      authentication:
-        "Not required for public-facing agency site; admin panel planned for future.",
-      api: "Contact form submission via third-party service; expandable to custom REST endpoints.",
-      deployment: "GitHub Pages with Bootstrap CDN and optimized local assets.",
+        "No dedicated database is required for the current marketing website; the architecture is prepared for future CRM or CMS integration.",
+      authentication: "Not required for the public-facing agency website.",
+      api: "Web3Forms is used for contact form submission, with WhatsApp and email integrations for direct communication.",
+      deployment:
+        "Production deployment optimized for modern web hosting with responsive assets and SEO-ready configuration.",
     },
     challenges: [
-      "Differentiating the agency brand in a crowded market through unique visual identity.",
-      "Ensuring Bootstrap defaults feel custom and premium, not template-like.",
-      "Balancing Arabic and English content requirements for bilingual clients.",
+      "Creating a professional agency identity that feels trustworthy while remaining modern and accessible.",
+      "Designing a clear service hierarchy that helps potential clients quickly understand what T.E Digital offers.",
+      "Presenting multiple project categories without making the portfolio section feel crowded.",
+      "Building an effective lead-generation flow with simple contact options and minimal friction.",
+      "Supporting Arabic RTL content while maintaining a polished visual experience.",
     ],
     lessonsLearned: [
-      "Agency websites convert better with clear service hierarchy and prominent CTAs.",
-      "Custom CSS on top of Bootstrap creates unique designs without reinventing the grid.",
-      "Social proof sections significantly increase visitor engagement time.",
+      "Clear service positioning is essential for converting agency website visitors into potential clients.",
+      "Real project showcases are more effective at building trust than generic portfolio examples.",
+      "Multiple direct contact channels such as WhatsApp, email, and forms reduce friction during the lead-generation process.",
+      "Responsive and mobile-first design is critical for local business websites.",
+      "Tracking important user interactions provides valuable insight into which conversion paths perform best.",
     ],
     performance: {
-      seo: "Structured headings, meta descriptions, Open Graph tags, and keyword-rich content.",
+      seo: "SEO-focused page structure, descriptive metadata, semantic HTML, optimized content, and social sharing metadata.",
       accessibility:
-        "Bootstrap accessibility utilities, focus states, and semantic landmark regions.",
+        "Semantic sections, accessible interactive elements, readable typography, and responsive layouts.",
       performance:
-        "CDN-loaded Bootstrap, compressed images, and deferred script loading.",
+        "Optimized images, reusable components, lightweight assets, and efficient client-side interactions.",
       responsive:
-        "Bootstrap responsive utilities with custom mobile navigation.",
+        "Responsive layouts designed for mobile, tablet, and desktop screen sizes.",
       bestPractices:
-        "Component-based HTML sections, consistent naming conventions, and DRY CSS.",
+        "Reusable React components, consistent naming conventions, modular structure, responsive design principles, and maintainable frontend architecture.",
     },
     futureImprovements: [
-      "CMS integration for easy content updates",
-      "Client testimonial slider with video support",
-      "Blog section for SEO content marketing",
-      "Dark/light theme toggle",
-      "Multi-step project inquiry form",
+      "Custom CRM dashboard for managing leads",
+      "Database integration for client inquiries and project requests",
+      "Admin panel for managing services and portfolio projects",
+      "Online project quotation system",
+      "Client testimonials and reviews management",
+      "Blog and SEO content management system",
+      "Advanced conversion analytics dashboard",
+      "Dark/light theme customization",
     ],
-    relatedSlugs: ["dashboard", "aqar-vision"],
+    relatedSlugs: ["studio-hub", "dashboard", "bright-smile", "shop-co"],
   },
+
   {
     slug: "abyssal-elegance",
     title: "Abyssal Elegance",
@@ -783,7 +809,7 @@ export const projects: Project[] = [
       "GitHub",
     ],
 
-    liveUrl: "https://ingenious-exploration-production-8628.up.railway.app/",
+    liveUrl: "https://abyssa-l-elegance-s3umr3.cranl.net",
     githubUrl: "https://github.com/eng-tarek-cyber/abyssa-l-elegance",
 
     overview: {
